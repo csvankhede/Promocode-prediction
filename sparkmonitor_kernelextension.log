@@ -1,0 +1,15 @@
+INFO:  2020-06-05 14:28:42,092 - sparkmonitorkernel - 31652 - MainProcess -         140562172401472 - MainThread
+ Starting Kernel Extension 
+
+INFO:  2020-06-05 14:28:42,093 - sparkmonitorkernel - 31652 - MainProcess -         140562172401472 - MainThread
+ Socket Listening on port 58981 
+
+INFO:  2020-06-05 14:28:42,093 - sparkmonitorkernel - 31652 - MainProcess -         140561676678912 - Thread-4
+ Starting socket thread, going to accept 
+
+INFO:  2020-06-05 14:28:42,094 - sparkmonitorkernel - 31652 - MainProcess -         140562172401472 - MainThread
+ 58981 
+
+INFO:  2020-06-05 14:28:42,094 - sparkmonitorkernel - 31652 - MainProcess -         140562172401472 - MainThread
+ Adding jar from /home/csvankhede/anaconda3/lib/python3.7/site-packages/sparkmonitor/listener.jar  
+

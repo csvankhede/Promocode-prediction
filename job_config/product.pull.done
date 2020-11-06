@@ -1,0 +1,23 @@
+job.name=product
+job.group=localTos3
+job.description=Data pull from local system to  s3
+job.lock.enabled=False
+
+source.filebased.fs.uri=file:///
+source.skip.first.record=true
+
+source.class=org.apache.gobblin.source.extractor.filebased.TextFileBasedSource
+converter.classes=org.apache.gobblin.converter.csv.CsvToJsonConverter,org.apache.gobblin.converter.avro.JsonIntermediateToAvroConverter
+writer.builder.class=org.apache.gobblin.writer.AvroDataWriterBuilder
+
+extract.table.name=balanced_data
+extract.namespace=product
+extract.table.type=APPEND_ONLY
+
+#gobblin.converter.schemaInjector.schema=SCHEMA
+converter.csv.to.json.delimiter=,
+
+
+source.filebased.data.directory=file:///home/csvankhede/workspace/PromoCodePrediction/Data/balanced/balanced_data.csv
+source.schema=[{"columnName":"event_time","isNullable":"false","dataType":{"type":"string"}},{"columnName":"event_type","isNullable":"true","dataType":{"type":"string"}},{"columnName":"product_id","isNullable":"true","dataType":{"type":"string"}},{"columnName":"category_id","isNullable":"true","dataType":{"type":"string"}},{"columnName":"category_code","isNullable":"true","dataType":{"type":"string"}},{"columnName":"brand","isNullable":"true","dataType":{"type":"string"}},{"columnName":"price","isNullable":"true","dataType":{"type":"string"}},{"columnName":"user_id","isNullable":"true","dataType":{"type":"string"}},{"columnName":"user_session","isNullable":"true","dataType":{"type":"string"}}]
+
